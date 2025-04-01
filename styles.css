@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://imgs.search.brave.com/J7gMcNPyz4hN7kRW1wKv4nDU1SkN-w4eBS7jvs_lerY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvcGxhbm8tZGUt/ZnVuZG8tZG8tZm9y/dG5pdGUtYmF0dGxl/LXJveWFsZS1qcjZx/a2F6aTkwdTRnZ3Fm/LmpwZw');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
+    --roxo-claro: #8A56FF;
+    --azul-claro: #1E90FF;
+    --preto-fortnite: #141414;
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Anton', sans-serif; /* Fonte estilizada para um estilo mais impactante */
+    background-color: #D3D3D3; /* Fundo mais escuro para remeter ao tema do Fortnite */
+    color: #FFF;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #D3D3D3; /* Fundo escuro para o header, combinando com o tema Fortnite */
+    border-bottom: 3px solid var(--roxo-claro);
+    padding: 1rem 0;
 }
 
 
@@ -21,33 +27,36 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
-    font-weight: 600;
+    color: var(--azul-claro); /* Cor do link mais vibrante */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
+    background-image: url('https://store-images.s-microsoft.com/image/apps.23752.70702278257994163.2d963828-303e-4485-9d7c-8e0b6a5feef1.c98a8069-4c59-4617-a768-9ef02dfca8c1'); /* Trocar imagem para algo temático do Fortnite */
     background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
+    background-position: center;
+    border-radius: 10px;
+    width: 95%;
+    height: 600px;
     padding: 40px;
     margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
-/* posicionamento para a imagem à direita */
+/* Imagem do início */
 .img-inicio {
     position: absolute;
     right: 0;
-    top: 18rem;
-    width: 45rem;
+    top: 10%;
+    width: 20rem;
     height: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 
+/* Estilo do conteúdo à esquerda */
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -55,85 +64,121 @@ section {
     gap: 1rem;
 }
 
-
+/* Estilo do botão no início */
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--roxo-claro);
     border-radius: 30px;
     border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
+    width: 15em;
+    height: 3.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Efeito de sombra no texto */
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #FFF;
 }
 
-
-#tropicalia {
+#fortnite {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
+    background: url('img/fortnite-pattern-left.png') top left no-repeat,
+        url('img/fortnite-pattern-right.png') bottom right no-repeat;
+    background-size: 200px 200px;
 }
 
-#tropicalia .container {
+#fortnite .container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
 }
 
-
+/* Título da seção "O que é o Fortnite?" */
 h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: var(--roxo-claro);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #galeria {
-    background-color: #FAF4F4;
-
+    background-color: #ffffff; /* Cor de fundo mais escura para se alinhar com o tema */
 }
 
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
+    background: url('') bottom right no-repeat;
+    background-size: 1800px 2000px;
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url(''); /* Trocar imagem para algo mais relacionado ao Fortnite */
     background-size: cover;
     padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+    text-align: center;
 }
 
+/* Estilo do formulário */
 .formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
+    background-color: #1590ff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     font-weight: bold;
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color:6f40d4;
     border: none;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
+/* Campos de formulário */
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #2b2b2b;
+    color: #FFF;
+    border: 2px solid #444;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
 }
+
+.form-control:focus {
+    border-color: var(--roxo-claro);
+    background-color: #1c1c1c;
+}
+
+footer {
+    background-color: #141414;
+    color: #FFF;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer i {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--azul-claro);
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
